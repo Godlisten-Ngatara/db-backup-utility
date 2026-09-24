@@ -1,7 +1,7 @@
 import sqlite3
 from pathlib import Path
 
-from .base import BackupResult, DBAdapter
+from adapters.base import BackupResult, DBAdapter
 
 
 class SQLiteAdapter(DBAdapter):

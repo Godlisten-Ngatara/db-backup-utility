@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from ..adapters.init import get_adapter
+from adapters.init import get_adapter
 
 
 class BackupEngine:
@@ -31,11 +31,3 @@ if __name__ == "__main__":
         name="demo",
         path="./example.db",
     )
-
-    # Same pattern would apply to the others, just swap db_type + params:
-    # engine.run("postgres", name="demo", host="localhost", user="postgres",
-    #            password="secret", dbname="mydb")
-    # engine.run("mysql", name="demo", host="localhost", user="root",
-    #            password="secret", dbname="mydb")
-    # engine.run("mongodb", name="demo", uri="mongodb://localhost:27017",
-    #            dbname="mydb")

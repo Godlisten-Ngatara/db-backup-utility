@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from .base import BackupResult, DBAdapter
-from ..utils.shell import run, ShellError
+from adapters.base import BackupResult, DBAdapter
+from utils.shell import run, ShellError
 
 
 class MongoDBAdapter(DBAdapter):
